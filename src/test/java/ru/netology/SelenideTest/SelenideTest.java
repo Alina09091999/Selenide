@@ -17,8 +17,10 @@ public class SelenideTest {
         return LocalDate.now().plusDays(addDays).format(DateTimeFormatter.ofPattern(pattern));
     }
 
+
     @Test
     void shouldTest() {
+        
         open("http://localhost:9999");
         $("[data-test-id=city] input").setValue("Уфа");
         String planningDate = generateDate(4, "dd.MM.yyyy");
