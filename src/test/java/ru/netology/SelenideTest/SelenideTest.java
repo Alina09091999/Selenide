@@ -33,7 +33,6 @@ public class SelenideTest {
                 .shouldHave(Condition.exactText("Встреча успешно забронирована на " + planningDate));
 
 
-
     }
 
 }
